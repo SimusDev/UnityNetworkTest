@@ -548,12 +548,12 @@ MonoBehaviour:
   _cookieScope: 1
   _dontDestroyOnLoad: 1
   _transport: {fileID: 1198856702}
-  _networkPrefabs: {fileID: 0}
-  _networkAssets: {fileID: 0}
+  _networkPrefabs: {fileID: 11400000, guid: f2302f72794e52a48849b2552ec864be, type: 2}
+  _networkAssets: {fileID: 11400000, guid: b10c1e892cd75cd40bb7f7cf201a464e, type: 2}
   _networkRules: {fileID: 11400000, guid: d8799083b96579a42b8b2d03e4ceae98, type: 2}
   _visibilityRules: {fileID: 11400000, guid: 8f014a5bd8dc68646a2a3c0b18c5bbd8, type: 2}
   _authenticator: {fileID: 0}
-  _tickRate: 20
+  _tickRate: 64
   _patchLingeringProcessBug: 0
 --- !u!4 &1198856704
 Transform:
