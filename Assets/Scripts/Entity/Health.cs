@@ -6,7 +6,7 @@ namespace Entity
 {
     public class Health : MonoBehaviour
     {
-        private SyncVar<float> _value = new SyncVar<float>();
+        private SyncVar<float> _value = new SyncVar<float>(100);
 
         public Action<float> ValueChanged;
 
