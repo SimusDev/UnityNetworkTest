@@ -631,6 +631,7 @@ GameObject:
   - component: {fileID: 114762042097486276}
   - component: {fileID: 6167283366731914716}
   - component: {fileID: 8444553742994942428}
+  - component: {fileID: 4314338354546002456}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -821,6 +822,18 @@ MonoBehaviour:
   _toDeactivate: []
   _toEnable: []
   _toDisable: []
+--- !u!114 &4314338354546002456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623360729482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f22e19ff097dc498ba83e34e418641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Entity.Health
 --- !u!1 &1963958859065967600
 GameObject:
   m_ObjectHideFlags: 0
