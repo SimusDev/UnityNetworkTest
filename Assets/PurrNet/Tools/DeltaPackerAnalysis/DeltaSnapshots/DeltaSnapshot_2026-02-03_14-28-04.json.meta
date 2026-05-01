@@ -5,3 +5,10 @@ TextScriptImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 297320
+  packageName: 'PurrNet: Multiplayer Networking'
+  packageVersion: v1.19.0
+  assetPath: Assets/PurrNet/Tools/DeltaPackerAnalysis/DeltaSnapshots/DeltaSnapshot_2026-02-03_14-28-04.json
+  uploadId: 869676
