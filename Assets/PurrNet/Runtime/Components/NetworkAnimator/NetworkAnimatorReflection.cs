@@ -12,7 +12,7 @@ namespace PurrNet
 
         private bool _wasController;
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
             _wasController = IsController(_ownerAuth);
         }

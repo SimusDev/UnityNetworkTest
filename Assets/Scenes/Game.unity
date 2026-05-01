@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 1015142078}
   - component: {fileID: 1015142077}
   - component: {fileID: 1015142080}
+  - component: {fileID: 1015142081}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -382,6 +383,29 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &1015142081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015142076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b75530599bfcfa49ae4ecfe6ed3d21e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.StateMachine.StateMachine
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _ownerAuth: 0
+  _states: []
 --- !u!1 &1133371337
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,8 +567,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkManager
   _stopPlayingOnDisconnect: 0
-  _startServerFlags: 13
-  _startClientFlags: 7
+  _startServerFlags: 0
+  _startClientFlags: 0
   _cookieScope: 1
   _dontDestroyOnLoad: 1
   _transport: {fileID: 1198856702}

@@ -12,7 +12,7 @@ namespace PurrNet
 
         private static void Init() => _allPlayers = new FirstElementMap<PlayerID, T>();
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
             if (owner != _oldRegisteredOwner)
                 OnOwnerChanged(_oldRegisteredOwner, owner, isServer);

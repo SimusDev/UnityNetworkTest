@@ -991,6 +991,54 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Item",
+            "id": "e15a722f-7a98-42e8-b26d-b565b0d3a5f6",
+            "actions": [
+                {
+                    "name": "ItemUse",
+                    "type": "Button",
+                    "id": "a431f360-8638-4aaa-bb23-d5a7192195df",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ItemUseAlt",
+                    "type": "Button",
+                    "id": "0f89771f-9917-4968-a2ad-60d96cfce781",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a338cab1-8671-4771-90d6-033a2d63c1f6",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ItemUse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7c015813-abbb-4fc7-aafe-feca666364ea",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ItemUseAlt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

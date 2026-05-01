@@ -616,7 +616,7 @@ namespace PurrNet
         /// Called when this object is spawned
         /// This is only called once even if in host mode.
         /// </summary>
-        protected virtual void OnSpawned()
+        protected virtual void OnSpawnedAsync()
         {
         }
 
@@ -1195,7 +1195,7 @@ namespace PurrNet
 
                 try
                 {
-                    OnSpawned();
+                    OnSpawnedAsync();
                 }
                 catch (Exception e)
                 {

@@ -1,52 +1,90 @@
 using UnityEngine;
 using PurrNet;
+using UnityEngine.InputSystem;
 
 
-public class Item : MonoBehaviour
+public class Item : NetworkBehaviour
 {
     private ItemStackRef stackRef;
     private ItemStack itemStack;
 
-    
     private bool isUsing = false;
     private bool isUsingAlt = false;
 
-    protected virtual void Start()
+    private InputAction _useAction;
+    private InputAction _useAltAction;
+
+    protected virtual void OnSpawned()
     {
         itemStack = stackRef.Get();
+
+        if (!isOwner)
+            return;
+
+        _useAction = InputSystem.actions.FindAction("ItemUse");
+        _useAltAction = InputSystem.actions.FindAction("ItemUseAlt");
+
+        _useAction.performed += OnUseActionPerformed;
+        _useAction.canceled += OnUseActionCanceled;
+        _useAltAction.performed += OnUseAltActionPerformed;
+        _useAltAction.canceled += OnUseAltActionCanceled;
     }
 
-    public virtual void OnUsePressed()
+    private void OnUseActionPerformed(InputAction.CallbackContext context)
     {
-        isUsing = true;
+        SetUsingNetworked(true);
     }
 
-    public virtual void OnUseReleased()
+    private void OnUseActionCanceled(InputAction.CallbackContext context)
     {
-        isUsing = false;
+        SetUsingNetworked(false);
     }
 
-    public virtual void OnAltUsePressed()
+    private void OnUseAltActionPerformed(InputAction.CallbackContext context)
     {
-        isUsingAlt = true;
+        SetUsingAltNetworked(true);
     }
-    public virtual void OnAltUseReleased()
+
+    private void OnUseAltActionCanceled(InputAction.CallbackContext context)
     {
-        isUsingAlt = false;
+        SetUsingAltNetworked(false);
     }
+
+    public virtual void OnUsePressed() { }
+    public virtual void OnUseReleased() { }
+    public virtual void OnAltUsePressed() { }
+    public virtual void OnAltUseReleased() { }
     
     public virtual void Using() {}
     public virtual void UsingAlt() {}
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         if (isUsing)
         {
             Using();
         }
+
         if (isUsingAlt)
         {
             UsingAlt();
         }
+
+        
+    }
+
+    [ObserversRpc]
+    public void SetUsingNetworked(bool value)
+    {
+        isUsing = value;
+        OnUsePressed();
+    }
+
+    [ObserversRpc]
+    public void SetUsingAltNetworked(bool value)
+    {
+        isUsingAlt = value;
+        OnUsePressed();
     }
 
 }

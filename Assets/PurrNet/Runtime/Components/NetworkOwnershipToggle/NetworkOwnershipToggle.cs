@@ -25,7 +25,7 @@ namespace PurrNet
             Setup(false);
         }
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
             if (isController)
                 Setup(true);

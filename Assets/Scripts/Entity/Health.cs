@@ -13,6 +13,7 @@ namespace Entity
         private void OnEnable()
         {
             _value.onChanged += _ValueChanged;
+            
         }
 
         private void OnDisable()

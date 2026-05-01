@@ -42,7 +42,7 @@ namespace PurrNet
             _bones.Dispose();
         }
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
             _sendDelta = 1f / _sendRatePerSecond;
 

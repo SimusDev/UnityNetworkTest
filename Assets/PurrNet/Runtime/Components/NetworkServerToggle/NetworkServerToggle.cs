@@ -22,9 +22,9 @@ namespace PurrNet
         [Tooltip("Components to disable when the OnSpawned is called")] [SerializeField]
         private Behaviour[] _toDisable;
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
-            base.OnSpawned();
+            base.OnSpawnedAsync();
 
             Setup(isServer);
         }

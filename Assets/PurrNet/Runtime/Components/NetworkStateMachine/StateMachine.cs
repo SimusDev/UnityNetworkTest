@@ -96,7 +96,7 @@ namespace PurrNet.StateMachine
 
         protected override void OnSpawned(bool asServer)
         {
-            base.OnSpawned();
+            base.OnSpawnedAsync();
 
             if (asServer && networkManager.isPlannedHost)
                 return;

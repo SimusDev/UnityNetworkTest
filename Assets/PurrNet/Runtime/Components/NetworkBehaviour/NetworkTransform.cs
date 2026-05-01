@@ -281,7 +281,7 @@ namespace PurrNet
             ntModule.Unregister(this);
         }
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
             int ticksPerSec = networkManager.tickModule.tickRate;
             int ticksPerBuffer = Mathf.CeilToInt(ticksPerSec * 0.15f) * 2;

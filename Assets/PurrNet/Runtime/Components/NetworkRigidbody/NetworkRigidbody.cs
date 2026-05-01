@@ -132,9 +132,9 @@ namespace PurrNet
             }
         }
 
-        protected override void OnSpawned()
+        protected override void OnSpawnedAsync()
         {
-            base.OnSpawned();
+            base.OnSpawnedAsync();
 
             _targetPosition = _rigidbody.position;
             _targetRotation = _rigidbody.rotation;
