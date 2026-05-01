@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 114497868231759342}
   - component: {fileID: 114762042097486276}
   - component: {fileID: 6167283366731914716}
-  - component: {fileID: 182075777991898143}
+  - component: {fileID: 8444553742994942428}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -646,7 +646,7 @@ MonoBehaviour:
   _characterControllerPatch: 0
   _ownerAuth: 1
   _interpolationTiming: 0
---- !u!114 &182075777991898143
+--- !u!114 &8444553742994942428
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -667,10 +667,14 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
-  _components: []
-  _gameObjects:
-  - target: {fileID: 1773623360729482}
-    activeAsOwner: 0
+  _components:
+  - target: {fileID: 114963311885979670}
+    activeAsOwner: 1
+  - target: {fileID: 114497868231759342}
+    activeAsOwner: 1
+  - target: {fileID: 114762042097486276}
+    activeAsOwner: 1
+  _gameObjects: []
   _toActivate: []
   _toDeactivate: []
   _toEnable: []
