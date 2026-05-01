@@ -4,18 +4,18 @@ using System;
 
 namespace Entity
 {
-    public class Health : MonoBehaviour
+    public class Health : NetworkBehaviour
     {
         [SerializeField] private SyncVar<float> _value = new SyncVar<float>(100);
 
         public Action<float> ValueChanged;
 
-        private void Awake()
+        private void OnEnable()
         {
             _value.onChanged += _ValueChanged;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             _value.onChanged -= _ValueChanged;
         }
