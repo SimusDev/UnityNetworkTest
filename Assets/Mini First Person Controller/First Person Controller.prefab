@@ -667,14 +667,10 @@ MonoBehaviour:
   _directChildren: []
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
-  _components:
-  - target: {fileID: 114963311885979670}
+  _components: []
+  _gameObjects:
+  - target: {fileID: 1773623360729482}
     activeAsOwner: 1
-  - target: {fileID: 114497868231759342}
-    activeAsOwner: 1
-  - target: {fileID: 114762042097486276}
-    activeAsOwner: 1
-  _gameObjects: []
   _toActivate: []
   _toDeactivate: []
   _toEnable: []
