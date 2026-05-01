@@ -1013,6 +1013,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ItemInspect",
+                    "type": "Button",
+                    "id": "f9d76ecf-783e-4005-9a9f-e7929674939b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1035,6 +1044,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "ItemUseAlt",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02b39671-893a-4e39-aa7f-75da9eb2e925",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ItemInspect",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
