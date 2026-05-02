@@ -640,13 +640,13 @@ MonoBehaviour:
   _visitiblityRules: {fileID: 0}
   _components:
   - target: {fileID: 114103969153859672}
-    activeAsOwner: 0
+    activeAsOwner: 1
   - target: {fileID: 114657890492222300}
-    activeAsOwner: 0
+    activeAsOwner: 1
   - target: {fileID: 1117494781789415818}
-    activeAsOwner: 0
+    activeAsOwner: 1
   - target: {fileID: 20437472682476688}
-    activeAsOwner: 0
+    activeAsOwner: 1
   _gameObjects: []
   _toActivate: []
   _toDeactivate: []
