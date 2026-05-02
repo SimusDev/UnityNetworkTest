@@ -23,6 +23,8 @@ public class Item : NetworkBehaviour
 
     private void Start()
     {
+        
+
         animator = GetComponent<Animator>();
     //}
     //protected virtual void OnSpawned()

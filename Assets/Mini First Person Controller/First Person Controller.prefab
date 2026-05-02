@@ -356,6 +356,7 @@ GameObject:
   - component: {fileID: 114657890492222300}
   - component: {fileID: 114103969153859672}
   - component: {fileID: 1117494781789415818}
+  - component: {fileID: 2681452481587897125}
   m_Layer: 0
   m_Name: First Person Camera
   m_TagString: MainCamera
@@ -616,6 +617,41 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &2681452481587897125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593727746557118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d5e4b97b1615f4aae984a3d5f4235f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkOwnershipToggle
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _components:
+  - target: {fileID: 114103969153859672}
+    activeAsOwner: 0
+  - target: {fileID: 114657890492222300}
+    activeAsOwner: 0
+  - target: {fileID: 1117494781789415818}
+    activeAsOwner: 0
+  - target: {fileID: 20437472682476688}
+    activeAsOwner: 0
+  _gameObjects: []
+  _toActivate: []
+  _toDeactivate: []
+  _toEnable: []
+  _toDisable: []
 --- !u!1 &1773623360729482
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,9 +852,7 @@ MonoBehaviour:
     activeAsOwner: 1
   - target: {fileID: 114762042097486276}
     activeAsOwner: 1
-  _gameObjects:
-  - target: {fileID: 1593727746557118}
-    activeAsOwner: 1
+  _gameObjects: []
   _toActivate: []
   _toDeactivate: []
   _toEnable: []
@@ -1079,6 +1113,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02e3d1bbd6909e4409ab900b9c21492b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
 --- !u!1 &4907648526519154884
 GameObject:
   m_ObjectHideFlags: 0
